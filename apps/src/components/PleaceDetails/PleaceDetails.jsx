@@ -1,8 +1,8 @@
 import React from "react";
-const PleaceDetails=()=>{
+const PleaceDetails=({place})=>{
     return(
         <h1>
-            PleaceDetails
+            {place.name}
         </h1>
     )
 }
