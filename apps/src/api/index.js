@@ -1,20 +1,21 @@
 import axios from 'axios';
 
-const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng'
-const options = {
+let URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary'
 
+var options = {
+  
     params: {
-        latitude: '12.91285',
-        longitude: '100.87808',
+        bl_latitude: '11.847676',
+        tr_latitude: '12.838442',
+        bl_longitude: '109.095887',
+        tr_longitude: '109.149359',
 
-        lang: 'en_US'
     },
     headers: {
         'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
         'x-rapidapi-key': '588a962514mshcca96f48093be07p10cf8ejsn7b5b999c1d4e'
     }
 };
-
 
 
 
